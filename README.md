@@ -95,6 +95,7 @@ The [local job run test](amazon_emr_serverless_image_cli/validation_tool/validat
 docker run -it --rm <image-uri> spark-submit 
 --deploy-mode client 
 --master local 
+--entrypoint /bin/bash
 --class org.apache.spark.examples.SparkPi local:///usr/lib/spark/examples/jars/spark-examples.jar
 ```
 
